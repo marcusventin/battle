@@ -5,8 +5,7 @@ feature "Attack player" do
   scenario "attack button returns confirmation" do
     sign_in_and_play
     click_button 'Attack'
-    save_and_open_page
-    expect(page).to have_content "You attacked Player Two"
+    expect(page).to have_content "test_player_one attacked test_player_two"
   end
 
 end

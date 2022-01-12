@@ -1,3 +1,7 @@
 <p><%=@game.player_1.name%> attacked <%=@game.player_2.name%></p>
 <p><%=@game.player_1.name%> has <%=@game.player_1.hp%> HP </p>
 <p><%=@game.player_2.name%> has <%=@game.player_2.hp%> HP </p>
+
+<form action='/play'>
+  <input type="submit" value="Continue">
+</form>

@@ -1,6 +1,4 @@
 feature "Attack player" do
-  scenario "attack button exists" do
-  end
 
   scenario "attack button returns confirmation" do
     sign_in_and_play

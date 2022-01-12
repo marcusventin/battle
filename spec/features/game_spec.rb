@@ -2,8 +2,9 @@ require 'game'
 
 describe Game do
   describe "#attack" do
-    let (:player_1) { double :player_1 }
-    let (:player_2) { double :player_2 }
+    let (:player_1) { double :player }
+    let (:player_2) { double :player }
+    subject { described_class.new(player_1, player_2) }
 
     it { is_expected.to respond_to(:attack).with(1).argument }
 

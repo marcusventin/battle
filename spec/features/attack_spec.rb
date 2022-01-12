@@ -10,6 +10,8 @@ feature "Attack player" do
 
   scenario "attack reduces HP by 10" do
     sign_in_and_play
-    expect {click_button 'Attack' }.to change {$player_2.hp }.by(-10)
+    click_button 'Attack'
+    expect(page).to have_content "test_player_two has 90 HP"
+    expect(page).not_to have_content "test_player_two has 100 HP"
   end
 end

@@ -6,5 +6,3 @@ feature "Testing user input" do
   end
 
 end
-
-#save_and_open_page
